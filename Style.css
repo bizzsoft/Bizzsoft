@@ -1,0 +1,31 @@
+/* General Styling */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa;
+  color: #212529;
+}
+
+h1, h2, h4 {
+  font-weight: bold;
+}
+
+/* Timeline Phases */
+.timeline .phase {
+  border-radius: 10px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.timeline .phase:hover {
+  transform: translateX(10px);
+  background-color: #e9f7ef;
+}
+
+/* Links */
+a {
+  color: #198754; /* Bootstrap Green */
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
