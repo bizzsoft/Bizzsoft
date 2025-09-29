@@ -3,131 +3,180 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Samuel's Portfolio Website">
-  <title>Samuel Portfolio</title>
-  <link rel="stylesheet" href="style.css">
-  <!-- Bootstrap CSS -->
+  <title>Engr Sam - Portfolio</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f8f9fa;
+    }
+    .navbar {
+      background-color: #198754 !important; /* Green theme */
+    }
+    .navbar-brand, .nav-link {
+      color: #fff !important;
+    }
+    .hero-section {
+      background: linear-gradient(to right, #198754, #28a745);
+      color: white;
+      padding: 100px 20px;
+      text-align: center;
+    }
+    .project-card {
+      transition: transform 0.3s ease;
+    }
+    .project-card:hover {
+      transform: translateY(-5px);
+    }
+    footer {
+      background: #198754;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 30px;
+    }
+  </style>
 </head>
 <body>
-  <!-- HEADER -->
-  <header class="bg-success text-white text-center py-4">
-    <h1>Samuel's Portfolio</h1>
-    <p>Independent Contractor | Software Engineer</p>
-  </header>
 
-  <!-- ABOUT SECTION -->
-  <section class="container my-5">
-    <h2 class="text-success text-center mb-4">About Me</h2>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg">
+    <div class="container">
+      <a class="navbar-brand" href="#">Engr Sam</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#stacks">Stacks</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <h1>Welcome to My Portfolio</h1>
+    <p>Showcasing my projects, skills, and intellectual property</p>
+    <a href="#projects" class="btn btn-light btn-lg mt-3">View My Work</a>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="container py-5">
+    <h2 class="text-center mb-4">About Me</h2>
     <p class="text-center">
-      I am a software engineer passionate about creating innovative solutions for web and mobile platforms. 
-      My expertise lies in building secure, scalable applications with a strong focus on financial technology 
-      and digital testing systems. I also own intellectual property for several independent projects I’ve developed.
+      I am a professional software engineer passionate about creating innovative solutions 
+      for government and private sector clients. 
+      My work spans mobile and web platforms, including fintech apps and computer-based testing (CBT) solutions.
     </p>
   </section>
 
-  <!-- STACKS SECTION -->
-  <section class="container my-5">
-    <h2 class="text-success text-center mb-4">Stacks</h2>
+  <!-- Stacks Section -->
+  <section id="stacks" class="container py-5">
+    <h2 class="text-center mb-4">Technology Stacks</h2>
     <div class="row">
-      <div class="col-md-6">
-        <h4 class="text-success">Web Development Stack</h4>
-        <ul>
-          <li>HTML, CSS, JavaScript</li>
-          <li>Bootstrap</li>
-          <li>PHP & MySQL</li>
-          <li>Node.js & Express</li>
-          <li>Codeigniter Framework</li>
-          <li>larvel Framework</li>
-        </ul>
-      </div>
       <div class="col-md-6">
         <h4 class="text-success">Mobile Development Stack</h4>
         <ul>
           <li>Flutter</li>
-          <li>Kotlin</li>
           <li>Firebase</li>
-          <li>Java</li>
+          <li>REST APIs</li>
+        </ul>
+      </div>
+      <div class="col-md-6">
+        <h4 class="text-success">Web Development Stack</h4>
+        <ul>
+          <li>PHP</li>
+          <li>MySQL</li>
+          <li>Bootstrap</li>
+          <li>JavaScript</li>
         </ul>
       </div>
     </div>
   </section>
 
-  <!-- DEVELOPMENT PHASES -->
-  <section class="container my-5">
-    <h2 class="text-success text-center mb-4">Development Phases</h2>
-    <div class="timeline">
-      <div class="phase bg-light border-success border-start border-4 p-3 mb-3">
-        <h5>Phase 1: Planning</h5>
-        <p>Research, requirements gathering, and defining the project scope and goals.</p>
-      </div>
-      <div class="phase bg-light border-success border-start border-4 p-3 mb-3">
-        <h5>Phase 2: Design</h5>
-        <p>Creating wireframes, UI/UX designs, and system architecture.</p>
-      </div>
-      <div class="phase bg-light border-success border-start border-4 p-3 mb-3">
-        <h5>Phase 3: Development</h5>
-        <p>Building web and mobile applications using agile sprints.</p>
-      </div>
-      <div class="phase bg-light border-success border-start border-4 p-3 mb-3">
-        <h5>Phase 4: Testing</h5>
-        <p>Performing QA tests and debugging to ensure stability and performance.</p>
-      </div>
-      <div class="phase bg-light border-success border-start border-4 p-3 mb-3">
-        <h5>Phase 5: Deployment</h5>
-        <p>Deploying to production servers and GitHub Pages for public access.</p>
-      </div>
-    </div>
+  <!-- Development Phases -->
+  <section class="container py-5">
+    <h2 class="text-center mb-4">Project Development Phases</h2>
+    <ol>
+      <li>Requirements Gathering & Analysis</li>
+      <li>Design & Architecture Planning</li>
+      <li>Development & Coding</li>
+      <li>Testing & Quality Assurance</li>
+      <li>Deployment</li>
+      <li>Maintenance & Continuous Improvement</li>
+    </ol>
   </section>
 
-  <!-- PROJECT WORK SECTION -->
-  <section class="container my-5">
-    <h2 class="text-success text-center mb-4">Project Work</h2>
+  <!-- Projects Section -->
+  <section id="projects" class="container py-5">
+    <h2 class="text-center mb-4">Projects</h2>
     <div class="row">
-      <!-- Project 1 -->
-      <div class="col-md-6 mb-4">
-        <div class="card shadow-lg border-success">
+      <div class="col-md-6">
+        <div class="card project-card">
           <div class="card-body">
-            <h5 class="card-title text-success">FinTech B2B Solution</h5>
+            <h5 class="card-title">Fintech Mobile App</h5>
             <p class="card-text">
-              A secure financial technology platform designed for business-to-business transactions, 
-              including digital wallets, payments, and financial analytics.
+              Built using Flutter, PHP, and MySQL. Enables secure financial transactions
+              and seamless B2B integration for telecoms and startups.
             </p>
-            <p><strong>Stack:</strong> Flutter (Mobile), PHP, MySQL (Backend)</p>
-            <a href="https://github.com/username/fintech-b2b" class="btn btn-success" target="_blank">View on GitHub</a>
+            <p><strong>Stack:</strong> Flutter, PHP, MySQL</p>
           </div>
         </div>
       </div>
-      <!-- Project 2 -->
-      <div class="col-md-6 mb-4">
-        <div class="card shadow-lg border-success">
+      <div class="col-md-6">
+        <div class="card project-card">
           <div class="card-body">
-            <h5 class="card-title text-success">CBT Software</h5>
+            <h5 class="card-title">CBT Software</h5>
             <p class="card-text">
-              A Computer-Based Testing platform for educational institutions and corporate promotion exams. 
-              This system simplifies test creation, administration, and results analysis.
+              Computer-Based Testing system designed for government promotion exams.
+              Highly scalable with role-based access and reporting features.
             </p>
             <p><strong>Stack:</strong> PHP, MySQL</p>
-            <a href="https://github.com/username/cbt-software" class="btn btn-success" target="_blank">View on GitHub</a>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- IP OWNERSHIP SECTION -->
-  <section class="container my-5">
-    <h2 class="text-success text-center mb-4">Intellectual Property I Own</h2>
+  <!-- Intellectual Property -->
+  <section class="container py-5">
+    <h2 class="text-center mb-4">Intellectual Property</h2>
     <p class="text-center">
-      I retain full intellectual property rights for the projects listed here, including proprietary code and designs. 
-      This covers projects created as an independent contractor, without any signed employment agreements, 
-      in line with Nigerian Labour and Copyright Laws.
+      I own the intellectual property rights to my fintech and CBT solutions, including trade secrets,
+      source code, and proprietary algorithms. My work has been recognized as a pioneer contribution
+      to education and financial technology.
     </p>
   </section>
 
-  <!-- FOOTER -->
-  <footer class="bg-success text-white text-center py-3">
-    <p>&copy; 2025 Samuel. All rights reserved.</p>
+  <!-- Contact Section -->
+  <section id="contact" class="container py-5">
+    <h2 class="text-center mb-4">Contact Me</h2>
+    <form class="mx-auto" style="max-width: 500px;">
+      <div class="mb-3">
+        <label for="name" class="form-label">Name</label>
+        <input type="text" class="form-control" id="name" placeholder="Your Name">
+      </div>
+      <div class="mb-3">
+        <label for="email" class="form-label">Email</label>
+        <input type="email" class="form-control" id="email" placeholder="Your Email">
+      </div>
+      <div class="mb-3">
+        <label for="message" class="form-label">Message</label>
+        <textarea class="form-control" id="message" rows="4" placeholder="Your Message"></textarea>
+      </div>
+      <button type="submit" class="btn btn-success w-100">Send</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Engr Sam. All Rights Reserved.</p>
   </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
