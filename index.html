@@ -2,232 +2,96 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Engr Sam | Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Samuel's Portfolio Website">
+  <title>Samuel Portfolio</title>
+  <link rel="stylesheet" href="style.css">
   <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
-  <style>
-    body {
-      font-family: 'Poppins', sans-serif;
-      background-color: #f8f9fa;
-      color: #212529;
-    }
-
-    header {
-      background-color: #0d6efd;
-      color: white;
-      padding: 50px 20px;
-      text-align: center;
-    }
-
-    header h1 {
-      font-size: 2.8rem;
-      font-weight: bold;
-    }
-
-    header p {
-      font-size: 1.2rem;
-    }
-
-    .section-title {
-      color: #0d6efd;
-      margin-bottom: 30px;
-      text-align: center;
-      font-size: 2rem;
-      font-weight: bold;
-    }
-
-    footer {
-      background-color: #0d6efd;
-      color: white;
-      padding: 20px;
-      text-align: center;
-      margin-top: 50px;
-    }
-
-    .card {
-      border-radius: 10px;
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
-
-    .card:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
-    }
-
-    .highlight-note {
-      background: #e7f1ff;
-      padding: 15px;
-      border-left: 5px solid #0d6efd;
-      margin-top: 15px;
-      border-radius: 5px;
-    }
-  </style>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
-
-  <!-- Header -->
-  <header>
-    <h1>Engr Sam</h1>
-    <p>Software Engineer | Mobile & Web Developer | IP Owner</p>
-    <nav class="mt-3">
-      <a href="#about" class="text-white px-3 text-decoration-none">About</a>
-      <a href="#stacks" class="text-white px-3 text-decoration-none">Stacks</a>
-      <a href="#phases" class="text-white px-3 text-decoration-none">Phases</a>
-      <a href="#projects" class="text-white px-3 text-decoration-none">Projects</a>
-      <a href="#ip" class="text-white px-3 text-decoration-none">IP</a>
-      <a href="#contact" class="text-white px-3 text-decoration-none">Contact</a>
-    </nav>
+  <!-- HEADER -->
+  <header class="bg-success text-white text-center py-4">
+    <h1>Samuel's Portfolio</h1>
+    <p>Independent Contractor | Software Engineer</p>
   </header>
 
-  <!-- About Section -->
-  <section id="about" class="container py-5">
-    <h2 class="section-title">About Me</h2>
-    <p class="text-center mx-auto" style="max-width: 700px;">
-      I am a software engineer passionate about creating innovative mobile and web solutions.
-      My experience spans education, government, and fintech sectors. I have led projects that 
-      include CBT platforms, B2B fintech integrations, and education management systems (EMS).
+  <!-- ABOUT SECTION -->
+  <section class="container my-5">
+    <h2 class="text-success text-center mb-4">About Me</h2>
+    <p class="text-center">
+      I am a software engineer passionate about building web and mobile applications. 
+      My focus is on creating high-quality, scalable, and secure solutions. I also own intellectual property 
+      for several projects I've developed independently.
     </p>
   </section>
 
-  <!-- Stacks Section -->
-  <section id="stacks" class="container py-5">
-    <h2 class="section-title">Technology Stacks</h2>
-    <div class="row g-4">
-      <!-- Mobile Development Stack -->
+  <!-- STACKS SECTION -->
+  <section class="container my-5">
+    <h2 class="text-success text-center mb-4">Stacks</h2>
+    <div class="row">
       <div class="col-md-6">
-        <div class="card p-3 h-100">
-          <div class="card-body">
-            <h4 class="card-title text-center text-primary">Mobile Development Stack</h4>
-            <ul class="list-group list-group-flush mt-3">
-              <li class="list-group-item">React Native (Cross-platform)</li>
-              <li class="list-group-item">Flutter (Dart)</li>
-              <li class="list-group-item">Kotlin (Android)</li>
-              <li class="list-group-item">Swift (iOS)</li>
-              <li class="list-group-item">Firebase (Auth, Push Notifications)</li>
-            </ul>
-          </div>
-        </div>
+        <h4 class="text-success">Web Development Stack</h4>
+        <ul>
+          <li>HTML, CSS, JavaScript</li>
+          <li>Bootstrap</li>
+          <li>Node.js & Express</li>
+          <li>MongoDB</li>
+          <li>React.js</li>
+        </ul>
       </div>
-      <!-- Web Development Stack -->
       <div class="col-md-6">
-        <div class="card p-3 h-100">
-          <div class="card-body">
-            <h4 class="card-title text-center text-primary">Web Development Stack</h4>
-            <ul class="list-group list-group-flush mt-3">
-              <li class="list-group-item">Frontend: HTML5, CSS3, JavaScript, React.js</li>
-              <li class="list-group-item">Backend: Node.js, Django, Flask</li>
-              <li class="list-group-item">Database: PostgreSQL, MySQL, MongoDB</li>
-              <li class="list-group-item">DevOps: Docker, AWS, GitHub Actions</li>
-            </ul>
-          </div>
-        </div>
+        <h4 class="text-success">Mobile Development Stack</h4>
+        <ul>
+          <li>React Native</li>
+          <li>Flutter</li>
+          <li>Kotlin</li>
+          <li>Firebase</li>
+        </ul>
       </div>
     </div>
   </section>
 
-  <!-- Development Phases -->
-  <section id="phases" class="container py-5">
-    <h2 class="section-title">Development Phases</h2>
-    <div class="row g-4">
-      <div class="col-md-4">
-        <div class="card text-center p-3">
-          <h5>1. Discovery</h5>
-          <p>Understand requirements, users, and goals to define the project scope.</p>
-        </div>
+  <!-- DEVELOPMENT PHASES -->
+  <section class="container my-5">
+    <h2 class="text-success text-center mb-4">Development Phases</h2>
+    <div class="timeline">
+      <div class="phase bg-light border-success border-start border-4 p-3 mb-3">
+        <h5>Phase 1: Planning</h5>
+        <p>Research, requirements gathering, and project scope definition.</p>
       </div>
-      <div class="col-md-4">
-        <div class="card text-center p-3">
-          <h5>2. Planning</h5>
-          <p>Design system architecture and break tasks into Agile sprints.</p>
-        </div>
+      <div class="phase bg-light border-success border-start border-4 p-3 mb-3">
+        <h5>Phase 2: Design</h5>
+        <p>UI/UX wireframes and system architecture planning.</p>
       </div>
-      <div class="col-md-4">
-        <div class="card text-center p-3">
-          <h5>3. Development</h5>
-          <p>Implement features while collecting continuous feedback.</p>
-        </div>
+      <div class="phase bg-light border-success border-start border-4 p-3 mb-3">
+        <h5>Phase 3: Development</h5>
+        <p>Frontend and backend development with iterative sprints.</p>
       </div>
-      <div class="col-md-4">
-        <div class="card text-center p-3">
-          <h5>4. Testing</h5>
-          <p>Perform QA and UAT to ensure quality and reliability.</p>
-        </div>
+      <div class="phase bg-light border-success border-start border-4 p-3 mb-3">
+        <h5>Phase 4: Testing</h5>
+        <p>Quality assurance and bug fixing to ensure stability.</p>
       </div>
-      <div class="col-md-4">
-        <div class="card text-center p-3">
-          <h5>5. Deployment</h5>
-          <p>Deploy with CI/CD pipelines and maintain system stability.</p>
-        </div>
+      <div class="phase bg-light border-success border-start border-4 p-3 mb-3">
+        <h5>Phase 5: Deployment</h5>
+        <p>Launch the project on production servers and GitHub Pages.</p>
       </div>
     </div>
   </section>
 
-  <!-- Projects Section -->
-  <section id="projects" class="container py-5">
-    <h2 class="section-title">Key Projects</h2>
-    <div class="row g-4">
-      <div class="col-md-4">
-        <div class="card p-3">
-          <h5>CBT Platform</h5>
-          <p>A government-approved CBT platform for digital civil service promotion exams.</p>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="card p-3">
-          <h5>Fintech App</h5>
-          <p>Mobile app with secure B2B financial transaction APIs and telecom integration.</p>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="card p-3">
-          <h5>Education Management System</h5>
-          <p>Reimagined EMS for modernizing education under digital transformation programs.</p>
-        </div>
-      </div>
-    </div>
+  <!-- IP OWNERSHIP SECTION -->
+  <section class="container my-5">
+    <h2 class="text-success text-center mb-4">Intellectual Property I Own</h2>
+    <p class="text-center">
+      All code, designs, and architectures listed in my portfolio are solely my intellectual property 
+      unless otherwise stated. This includes projects created without a written employment agreement 
+      as protected under Nigerian Labour and Copyright Laws.
+    </p>
   </section>
 
-  <!-- Intellectual Property Section -->
-  <section id="ip" class="container py-5">
-    <h2 class="section-title">Intellectual Property I Own</h2>
-    <ul class="list-group">
-      <li class="list-group-item">
-        <strong>CBT Platform:</strong> Proprietary codebase for civil service examinations.
-      </li>
-      <li class="list-group-item">
-        <strong>Fintech App A:</strong> Exclusive B2B fintech mobile banking integration system.
-      </li>
-      <li class="list-group-item">
-        <strong>Education Management System (EMS):</strong> Modern platform for education digitalization.
-      </li>
-      <li class="list-group-item">
-        <strong>Backend Architecture Design:</strong> Trade-secret telecom B2B integrations.
-      </li>
-    </ul>
-    <div class="highlight-note mt-3">
-      <p>
-        <strong>Note:</strong> All projects listed above are protected under intellectual property laws.
-        Unauthorized use or replication is strictly prohibited.
-      </p>
-    </div>
-  </section>
-
-  <!-- Contact Section -->
-  <section id="contact" class="container py-5 text-center">
-    <h2 class="section-title">Contact</h2>
-    <p>Email: <a href="mailto:engr.sam@example.com" class="text-primary">engr.sam@example.com</a></p>
-    <p>GitHub: <a href="https://github.com/yourusername" target="_blank" class="text-primary">github.com/yourusername</a></p>
-    <p>LinkedIn: <a href="https://linkedin.com/in/yourusername" target="_blank" class="text-primary">linkedin.com/in/yourusername</a></p>
-  </section>
-
-  <!-- Footer -->
-  <footer>
-    <p>&copy; 2025 Engr Sam. Built with Bootstrap and deployed on GitHub Pages.</p>
+  <!-- FOOTER -->
+  <footer class="bg-success text-white text-center py-3">
+    <p>&copy; 2025 Samuel. All rights reserved.</p>
   </footer>
-
-  <!-- Bootstrap JS -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
